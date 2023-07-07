@@ -29,7 +29,6 @@ jobs:
         run: npx eslint index.js
 
       - name: "Publish to NPM"
-      - uses: JS-DevTools/npm-publish@v2
-        run: npm publish
+        uses: JS-DevTools/npm-publish@v2
         with:
           token: ${{ secrets.NPM_TOKEN }}
